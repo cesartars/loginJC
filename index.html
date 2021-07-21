@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilo.css">
+    <title>LoginJC</title>
+
+</head>
+<body>
+    <div class="logo"><H1>LOGIN JC</H1></div>
+
+    <div class="container">
+        <div class="azul">
+            <div class="caja crear">
+                <h2>Crea una Cuenta</h2>
+                <button class="crearBTN">Iniciar Sesion</button>
+            </div>
+
+            <div class="caja iniciar">
+                <h2>Inicia Sesion</h2>
+                <button class="iniciarBTN">Crear Cuanta</button>
+            </div>
+
+        </div>
+
+            <div class="formulario">
+                <div class="formu iniciarForm">
+                <form>
+                    <h3>Inicia Sesion</h3>
+                    <input type="text" placeholder="Primer Nombre">
+                    <input type="password" placeholder="Password">
+                    <input type="submit" value="Iniciar">
+                    <a href="#" class="forgot">Olvide mi Contraseña</a>
+
+                </form>  
+            </div>
+
+
+            <div class="formu crearForm">
+                <form>
+                    <h3>Crear Cuenta</h3>
+                    <input type="text" placeholder="Primer Nombre">
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirmar Password">
+                    <input type="submit" value="Registrar">
+                    
+
+                </form>  
+            </div>
+        </div>
+    </div>
+    <script>
+        const crearBTN = document.querySelector('.crearBTN');
+        const iniciarBTN = document.querySelector('.iniciarBTN');
+        const formulario = document.querySelector('.formulario');
+        const body = document.querySelector('body')
+
+        iniciarBTN.onclick = function(){
+            formulario.classList.add('activate')
+            body.classList.add('activate')
+        }
+
+        crearBTN.onclick = function(){
+            formulario.classList.remove('activate')
+            body.classList.remove('activate')
+        }
+
+    </script>
+
+</body>
+</html>
